@@ -1,0 +1,235 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mohammad Arshad</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        
+        <table>
+            <tr>
+                <td style="width: 30%">
+                    <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
+                </td>
+                <td style="width: 70%">
+                    <h1>Mohammad Arshad</h1>
+                    <p>Email: arshadc534@gmail.com</p>
+                    <p>Phone: 8303167147</p>
+                    <p>Address: Hardoi, Uttar Pradesh, India</p>
+                </td>
+            </tr>
+        </table>
+
+        
+        <table>
+            <tr>
+                <th class="section-title">Career Objective</th>
+            </tr>
+            <tr>
+                <td>
+                    To secure a challenging position in a reputable organization to expand my learning, knowledge, and skills.
+                </td>
+            </tr>
+        </table>
+
+        
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">Education</th>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <th>Institution</th>
+            </tr>
+            <tr>
+                <td>BCA (1 Year Completed)</td>
+                <td>Integral University, Lucknow</td>
+            </tr>
+        </table>
+
+        
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">Skills</th>
+            </tr>
+            <tr>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>Communication Skills</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td>Typing Mastery</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Data Entry Specialist</td>
+                <td>Advanced</td>
+            </tr>
+        </table>
+
+        
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">Work Experience</th>
+            </tr>
+            <tr>
+                <td colspan="2">No work experience. Fresher.</td>
+            </tr>
+        </table>
+
+      
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">Contact Information</th>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>arshadc534@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td>8303167147</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+  .container {
+      width: 80%;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+      color: #333;
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  }
+  td, th {
+      padding: 10px;
+      border: 1px solid #ddd;
+  }
+  th {
+      background-color: #f4f4f4;
+      text-align: left;
+  }
+  .section-title {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+  }
+  .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+</style> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <script>
+        // Function for displaying values
+        function dis(val) {
+            document.getElementById("edu").value += val;
+        }
+
+        // Function for evaluation
+        function solve() {
+            let x = document.getElementById("edu").value;
+            let y = eval(x); // Use eval to evaluate the expression
+            document.getElementById("edu").value = y;
+        }
+
+        // Function for clearing the display
+        function clr() {
+            document.getElementById("edu").value = "";
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+        }
+        input[type="text"] {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body id="one">
+    <div class="title">Edureka JavaScript Calculator</div>
+    <table border="1">
+        <tr>
+            <td><input type="button" value="C" onclick="clr()"/> </td>
+            <td colspan="3"><input type="text" id="edu" disabled/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+
+
